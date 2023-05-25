@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <section class="visual">
+        <div class="inner">
+            <div class="title fade-in">
+                <img src="./fadeimg/visual_title.png" alt="">
+            </div>
+            <div class="pcup1 fade-in">
+                <img src="./fadeimg/visual_cup1.png" alt="" class="cup1 image">
+                <img src="./fadeimg/visual_cup1_text.png" alt="" class="cup1 text">
+            </div>
+            <div class="pcup2 fade-in">
+                <img src="./fadeimg/visual_cup2.png" alt="" class="cup2 image">
+                <img src="./fadeimg/visual_cup2_text.png" alt="" class="cup2 text">
+            </div>
+            <div class="pspoon fade-in">
+                <img src="./fadeimg/visual_spoon.png" alt="" class="spoon">
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+        gsap.from(fadeEls, {
+            duration: 2,
+            scale: .3,
+            opacity: 0,
+            stagger: 0.3,
+            ease: 'bounce'
+        })
+
+
+    </script>
+    
+</body>
+</html>
